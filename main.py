@@ -2,10 +2,12 @@ import os
 import requests
 import telebot
 from telebot import types
+from dotenv import load_dotenv
 
 
 telegram_token_bot = os.environ['TELEGRAM_BOT_TOKEN']
 bot = telebot.TeleBot(telegram_token_bot) 
+load_dotenv()
 
 
 class GameData:
